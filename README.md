@@ -2,7 +2,7 @@
 
 Highlight the navigation link of the section being read, for tables of contents, docs sidebars and one-page menus, with `aria-current`, steady clicks, scroll containers and long navigations that follow along. For vanilla JavaScript, any framework and plain HTML.
 
-[Demo](https://samline.github.io/utils/scroll-spy/) · [Examples](https://samline.github.io/utils/scroll-spy/examples/) · [Documentation](https://samline.github.io/utils/docs/scroll-spy/) · [Changelog](CHANGELOG.md)
+[Demo](https://samline.github.io/scroll-spy/) · [Examples](https://samline.github.io/scroll-spy/examples/) · [Documentation](https://samline.github.io/scroll-spy/docs/) · [Changelog](CHANGELOG.md)
 
 ## Table of contents
 
@@ -106,29 +106,29 @@ Watch the page or a scroll container (`root`), move the line below a sticky head
 
 ## Documentation
 
-Read the [documentation](https://samline.github.io/utils/docs/scroll-spy/) for the full guides and API contracts, and explore [working examples](https://samline.github.io/utils/scroll-spy/examples/) with complete and separate source files.
+Read the [documentation](https://samline.github.io/scroll-spy/docs/) for the full guides and API contracts, and explore [working examples](https://samline.github.io/scroll-spy/examples/) with complete and separate source files.
 
-| Guide                                                                               | What it covers                                                        |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [Installation](https://samline.github.io/utils/docs/scroll-spy/getting-started/)    | npm, CDN and the first navigation.                                    |
-| [API reference](https://samline.github.io/utils/docs/scroll-spy/reference/api/)     | `scrollSpy`, `autoScrollSpy` and `window.ScrollSpy`.                  |
-| [Options](https://samline.github.io/utils/docs/scroll-spy/reference/configuration/) | Attributes and options.                                               |
-| [Layouts](https://samline.github.io/utils/docs/scroll-spy/guides/layouts/)          | Sticky headers, scroll containers, smooth scrolling and nested lists. |
-| [Frameworks](https://samline.github.io/utils/docs/scroll-spy/guides/frameworks/)    | React, Vue, Svelte, Astro and page swaps.                             |
+| Guide                                                                         | What it covers                                                        |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [Installation](https://samline.github.io/scroll-spy/docs/getting-started/)    | npm, CDN and the first navigation.                                    |
+| [API reference](https://samline.github.io/scroll-spy/docs/reference/api/)     | `scrollSpy`, `autoScrollSpy` and `window.ScrollSpy`.                  |
+| [Options](https://samline.github.io/scroll-spy/docs/reference/configuration/) | Attributes and options.                                               |
+| [Layouts](https://samline.github.io/scroll-spy/docs/guides/layouts/)          | Sticky headers, scroll containers, smooth scrolling and nested lists. |
+| [Frameworks](https://samline.github.io/scroll-spy/docs/guides/frameworks/)    | React, Vue, Svelte, Astro and page swaps.                             |
 
 ## Changelog
 
-Read [CHANGELOG.md](CHANGELOG.md) or the [published changelog](https://samline.github.io/utils/docs/scroll-spy/changelog/) for release history and explicitly marked breaking and behavior changes. Review the notes before upgrading.
+Read [CHANGELOG.md](CHANGELOG.md) or the [published changelog](https://samline.github.io/scroll-spy/docs/changelog/) for release history and explicitly marked breaking and behavior changes. Review the notes before upgrading.
 
 ## AI agent skill
 
-The [Scroll Spy skill](https://samline.github.io/utils/skills/scroll-spy/SKILL.md) teaches verified package integration. Its maintained [repository source](site/SKILL.md) and website download are the same file. Verify the installed package version before applying its guidance.
+The [Scroll Spy skill](https://samline.github.io/scroll-spy/skills/scroll-spy/SKILL.md) teaches verified package integration. Its maintained [repository source](skills/scroll-spy/SKILL.md) and website download are the same file. Verify the installed package version before applying its guidance.
 
-Download [SKILL.md](https://samline.github.io/utils/skills/scroll-spy/SKILL.md) into a `scroll-spy/` folder in your agent's supported skill directory. For agents that discover project skills from `.agents/skills/`:
+Download [SKILL.md](https://samline.github.io/scroll-spy/skills/scroll-spy/SKILL.md) into a `scroll-spy/` folder in your agent's supported skill directory. For agents that discover project skills from `.agents/skills/`:
 
 ```sh
 mkdir -p .agents/skills/scroll-spy
-curl --fail --location https://samline.github.io/utils/skills/scroll-spy/SKILL.md \
+curl --fail --location https://samline.github.io/scroll-spy/skills/scroll-spy/SKILL.md \
   --output .agents/skills/scroll-spy/SKILL.md
 ```
 
