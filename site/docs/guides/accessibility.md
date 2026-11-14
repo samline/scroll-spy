@@ -15,7 +15,7 @@ Scroll Spy marks the link of the section being read. It guarantees `aria-current
 
 ## Keyboard and focus
 
-Scroll Spy never moves focus and never scrolls the page. Tab, Enter and the browser's history work as without it. Combine it with [@samline/scroll-to](../../../scroll-to/) or CSS `scroll-behavior` when you want smooth jumps that move focus to the section.
+Scroll Spy never moves focus and never scrolls the page. Tab, Enter and the browser's history work as without it. Combine it with [@samline/scroll-to](https://samline.github.io/scroll-to/) or CSS `scroll-behavior` when you want smooth jumps that move focus to the section.
 
 ## Motion and state
 
