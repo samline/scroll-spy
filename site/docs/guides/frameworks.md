@@ -5,7 +5,7 @@ description: Use @samline/scroll-spy in React, Vue, Svelte and Astro, and keep i
 locale: en
 sidebar:
   group: guides
-  order: 3
+  order: 4
 ---
 
 `scrollSpy` returns an object with `destroy()`, so it fits every framework's mount and unmount hooks. Call `refresh()` when the headings change.
