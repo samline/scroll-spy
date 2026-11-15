@@ -1,0 +1,40 @@
+{
+  "package": {
+    "name": "Scroll Spy",
+    "npmName": "@samline/scroll-spy",
+    "version": "1.0.0",
+    "description": "Highlight the navigation link of the section in view, for tables of contents and one-page menus, with aria-current, click locking and scroll containers, for vanilla JavaScript, any framework and plain HTML.",
+    "author": "Samuel Olvera (samline)",
+    "license": "MIT",
+    "keywords": [
+      "scroll-spy",
+      "scrollspy",
+      "table-of-contents",
+      "toc",
+      "navigation",
+      "aria-current",
+      "active-link",
+      "scroll"
+    ]
+  },
+  "site": {
+    "url": "https://samline.github.io/scroll-spy/",
+    "repository": "https://github.com/samline/scroll-spy",
+    "namespace": "samline-scroll-spy",
+    "template": false,
+    "credit": "samline"
+  },
+  "theme": {
+    "accentLight": "#bf4532",
+    "accentDark": "#ea6a55"
+  },
+  "delivery": {
+    "cdnScript": "https://cdn.jsdelivr.net/npm/@samline/scroll-spy@1.0.0/dist/browser/scroll-spy.global.js",
+    "cdnStylesheet": null
+  },
+  "dev": {
+    "landingPort": 4450,
+    "docsPort": 4451,
+    "testPort": 4458
+  }
+}
