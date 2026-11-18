@@ -62,7 +62,7 @@ For Shopify, WordPress or plain HTML pages without a build step, load the browse
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/npm/@samline/scroll-spy@1.0.0/dist/browser/scroll-spy.global.js"
+  src="https://cdn.jsdelivr.net/npm/@samline/scroll-spy@1.0.1/dist/browser/scroll-spy.global.js"
   defer
 ></script>
 ```

@@ -107,7 +107,7 @@ const isScrollable = (element: Element) => element.scrollHeight > element.client
  * its top crosses the activation line (`offset`); at the very bottom of the
  * page, the last section in view is active. Returns `{ active, refresh, destroy }`.
  */
-export function scrollSpy(nav: Element | string, options: ScrollSpyOptions = {}): ScrollSpy {
+export const scrollSpy = (nav: Element | string, options: ScrollSpyOptions = {}): ScrollSpy => {
   if (!isBrowser()) return noopSpy
   const container = resolveElements(nav)[0]
   if (!container) return noopSpy
@@ -132,6 +132,13 @@ export function scrollSpy(nav: Element | string, options: ScrollSpyOptions = {})
   let frame = 0
   let idle: ReturnType<typeof setTimeout> | undefined
   const originals = new Map<HTMLAnchorElement, string | null>()
+  const restore = (link: HTMLAnchorElement) => {
+    if (activeClass) link.classList.remove(activeClass)
+    if (!originals.has(link)) return
+    const original = originals.get(link)
+    if (original === null || original === undefined) link.removeAttribute('aria-current')
+    else link.setAttribute('aria-current', original)
+  }
 
   const read = () => {
     const byId = new Map<string, HTMLAnchorElement[]>()
@@ -301,14 +308,6 @@ export function scrollSpy(nav: Element | string, options: ScrollSpyOptions = {})
       originals.clear()
     },
   }
-
-  function restore(link: HTMLAnchorElement) {
-    if (activeClass) link.classList.remove(activeClass)
-    if (!originals.has(link)) return
-    const original = originals.get(link)
-    if (original === null || original === undefined) link.removeAttribute('aria-current')
-    else link.setAttribute('aria-current', original)
-  }
 }
 
 /**
@@ -316,12 +315,12 @@ export function scrollSpy(nav: Element | string, options: ScrollSpyOptions = {})
  * later, and clean up ones that are removed. Returns a controller with
  * `refresh()` and `destroy()`.
  */
-export function autoScrollSpy({
+export const autoScrollSpy = ({
   selector = `[${ATTRIBUTE}]`,
   scope,
   observe = true,
   ...options
-}: AutoScrollSpyOptions = {}): AutoInitController {
+}: AutoScrollSpyOptions = {}): AutoInitController => {
   return autoInit({
     selector,
     observe,
