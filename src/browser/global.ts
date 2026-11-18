@@ -1,5 +1,5 @@
-import { autoScrollSpy, scrollSpy } from '../core/scroll-spy.js'
-import type { AutoInitController } from '../core/scroll-spy.js'
+import { autoScrollSpy, scrollSpy } from '../vanilla/index.js'
+import type { AutoInitController } from '../vanilla/index.js'
 
 /**
  * Classic script for pages without a build step. It watches every
