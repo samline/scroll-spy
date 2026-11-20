@@ -49,9 +49,9 @@
   },
   "themeReview": {
     "status": "verified",
-    "source": "The maintainer asked for a new accent, not used by any sibling, in chat on 2026-11-13; vermilion (#e0533d) derived with npm run accent. Carried over from the utils collection site.",
-    "accentLight": "#7e22ce",
-    "accentDark": "#d8b4fe"
+    "source": "The maintainer asked in chat on 2026-11-19 for accents no sibling site shares; fuchsia (#a21caf / #e879f9) replaces #7e22ce / #d8b4fe, both above 4.5:1 against the theme background and button text.",
+    "accentLight": "#a21caf",
+    "accentDark": "#e879f9"
   },
   "sources": [
     {
